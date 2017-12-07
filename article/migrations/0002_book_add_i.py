@@ -11,9 +11,9 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RenameField(
+        migrations.AddField(
             model_name='book',
-            old_name='title',
-            new_name='name',
+            name='add_i',
+            field=models.CharField(max_length=100, default='+'),
         ),
     ]
