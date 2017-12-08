@@ -6,6 +6,7 @@ class Book(models.Model):
     pud_date = models.DateTimeField()
 
     add_i = models.CharField(max_length = 100, default = '+')
+    category = models.CharField(max_length = 20, default = 'python')
 
     # def __unicode__(self):
     #     return self.name

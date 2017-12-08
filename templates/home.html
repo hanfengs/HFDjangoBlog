@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="posts">
+    {% for book in post_list %}
+        <section class="post">
+            <header class="post-header">
+                <h2 class="post-title">{{ book.name }}</h2>
+
+                    <p class="post-meta">
+                        Time:  <a class="post-author" href="#">{{ book.pud_date }}</a> <a class="post-category post-category-js" href="#">{{ book.category }}</a>
+                    </p>
+            </header>
+
+                <div class="post-description">
+                    <p>
+                        {{ post.add_i }}
+                    </p>
+                </div>
+        </section>
+    {% endfor %}
+
+    <!-- {% for book in post_list%}
+    <li>{{book}}</li>
+    {% endfor %} -->
+
+</div><!-- /.blog-post -->
+{% endblock %}
